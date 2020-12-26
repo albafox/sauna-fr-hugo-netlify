@@ -1,0 +1,563 @@
+html,body {
+  font-family: 'Source Sans Pro', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+body,h1,h2,h3,h4,h5,a,p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+}
+
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #000000;
+}
+
+a {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+input {
+  border: 0px;
+  margin-bottom:10px !important;
+  margin-top:10px !important;
+}
+
+.hz__line {
+  border-top: 1px solid black;
+  height: 0px;
+}
+
+/* default flex setting */
+
+.flex__row--center{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex__row--spacebetween{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex__column--center{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex__column--flexend{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex__column--spacebetween{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* default flex setting ended */
+
+.flex__row__wrap--spacebetween{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.table {
+  display: table;
+}
+
+.table__cell--left {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table__cell--center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table__cell--right {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+}
+
+
+.white__font {
+  color: #fff;
+}
+
+.black__font {
+  color: #000;
+}
+
+.padding--100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.margin--0 {
+  margin: 0px;
+}
+
+.padding--0 {
+  padding: 0px;
+}
+
+
+.padding--40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.padding--20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.padding--10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.padding--5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.img__padding--15 {
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.img__padding--10 {
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.img__padding--20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.padding__top--40 {
+  padding-top: 40px;
+}
+
+.padding__bottom--40 {
+  padding-bottom: 40px;
+}
+
+.padding__top--20 {
+  padding-top: 20px;
+}
+
+.padding__bottom--20 {
+  padding-bottom: 20px;
+}
+
+.padding__bottom--10 {
+  padding-bottom: 10px;
+}
+
+.margin--0 {
+  margin: 0px;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.responsive-embed.widescreen,
+.flex-video.widescreen {
+  padding-bottom: 62.25%;
+  width: 100%;
+}
+
+
+
+#video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  background-image: url("../img/vid.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 0px !important;
+}
+
+
+.background__cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.blue_mob
+{
+  position: absolute;
+    top: 0vw;
+    right: -6vw;
+    width: 23vw;
+
+}
+
+.blue_lin
+{
+   position: relative;
+  
+    
+}
+
+.background__contain {
+  background-size: cover;
+  background-position: contain;
+  background-repeat: no-repeat;
+
+}
+
+.background__height__large--R{
+  height: 500px;
+}
+
+
+
+
+.orgbutton {
+  padding: 10px 50px;
+  background: #FBB03B;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-bottom: 0px;
+
+}
+
+.whitebutton{
+  padding: 10px 50px;
+  background: white;
+  color: #94b68f;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-bottom: 0px;
+}
+
+.whitebutton:hover{
+  padding: 10px 50px;
+  background: white;
+  color: #94b68f;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-bottom: 0px;
+}
+
+.orgbutton--outline {
+  padding: 10px 12px;
+  border:2px solid #FBB03B;
+  background: white;
+  color: #FBB03B;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-bottom: 0px;
+
+}
+
+.orgbutton--outline:hover ,.orgbutton--outline:focus{
+  padding: 10px 12px;
+  border:2px solid #FBB03B;
+  background: #FBB03B;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-bottom: 0px;
+
+}
+
+.orgbutton:hover {
+  background: #e15d21;
+  color: #fff;
+}
+
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  height: 47px;
+  padding: 10px;
+  color: #000;
+}
+
+.rown {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pan2 {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5vw 5vw;
+
+}
+
+.background__size {
+  height: 786px;
+}
+
+.sizing {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 90em) {
+  .blue_mob
+  {
+    position: absolute;
+      top: 0vw;
+      right: -6vw;
+      width: 20vw;
+  
+  }
+  #status {
+    left: 47%;
+    /* centers the loading animation horizontally one the screen */
+    top: 40%;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 64em) {
+
+  .filter {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: hue;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 75em) {
+
+  .background__height__large--R{
+    height: 400px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  [type='text'],
+  [type='password'],
+  [type='date'],
+  [type='datetime'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='week'],
+  [type='email'],
+  [type='number'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='url'],
+  [type='color'],
+  textarea {
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+
+  #status {
+
+    left: 43%;
+    /* centers the loading animation horizontally one the screen */
+    top: 40%;
+
+  }
+
+
+  .orgbutton {
+    padding: 10px 30px;
+    font-size: 21px;
+    font-weight: 500;
+  }
+
+  .btn23 {
+    padding: 10px 60px;
+  }
+
+
+  .abt_roger {
+    background: none;
+  }
+
+  .abt_roger h2,
+  .abt_roger p {
+    color: #000 !important;
+  }
+
+  .rown {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .pan2 {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5vw 5vw;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .blue_mob
+{
+  position: absolute;
+    top: 65%;
+    right: 2vw;
+    width: 30vw;
+
+}
+  .background__height__large--R{
+    height: 200px;
+  }
+  .filter {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: hue;
+  }
+
+  .img__small__padding--20 {
+    padding-bottom: 20px;
+  }
+
+  .sizing {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .background_size {
+    height: 420px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .guide_i {
+    max-width: 250px;
+  }
+
+  #status {
+    left: 39%;
+    /* centers the loading animation horizontally one the screen */
+    top: 40%;
+  }
+
+  .rowll {
+    padding-bottom: 10px;
+  }
+
+  .orgbutton {
+    padding: 10px 50px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  [type='text'],
+  [type='password'],
+  [type='date'],
+  [type='datetime'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='week'],
+  [type='email'],
+  [type='number'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='url'],
+  [type='color'],
+  textarea {
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .rown {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .rown_alt {
+    padding-top: 0px !important;
+  }
+
+  .rown_alt2 {
+    padding-bottom: 0px !important;
+  }
+
+
+  h1,
+  h2,
+  h3 {
+    font-weight: bold;
+  }
+
+}
+
+@media screen and (max-width: 30em) {
+  .blue_mob
+{
+  position: absolute;
+    top: 75%;
+    right: 2vw;
+    width: 30vw;
+
+}
+}

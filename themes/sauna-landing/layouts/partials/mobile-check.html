@@ -1,0 +1,10 @@
+<script>
+    document.getElementsByTagName('html')[0].classList.add('device-' +
+        (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+            ? 'mobile' : 'desktop'));
+</script>
+<style>
+  .device-desktop .mobile-only {
+    display: none;
+  }
+</style>
