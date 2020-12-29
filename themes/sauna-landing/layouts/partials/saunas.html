@@ -1,7 +1,7 @@
-{{ $list := (.saunaGroups) }}
-{{ $len := (len $list) }}
+{{ $saunas := (.saunaGroups) }}
+{{ $len := (len $saunas) }}
 
-{{ range $index, $element := $list }}
+{{ range $index, $element := $saunas }}
 
   <div class="row">
     <div class="small-12 medium-12 medium-centered large-12 large-centered columns">
