@@ -1,11 +1,28 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+{{ partial "header-image" (dict "imageUrl" .Params.headerImage) }}
 
-{{ partial "short-text" .Params.blurb}}
+{{ partial "about-text" .Params.aboutText }}
 
-{{ partial "2-up" .Params }}
+{{ partial "advantages" .Params.advantages }}
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
+{{ partial "section-title" .Params.videoSection }}
+{{ partial "video-section" .Params.videoSection }}
+
+{{ partial "section-title" .Params.catalogueSection }}
+{{ partial "catalogue-section" .Params.catalogueSection }}
+
+{{ partial "form-section" .Params.formSection }}
+
+{{ partial "section-title" .Params.saunas }}
+{{ partial "saunas" .Params.saunas }}
+
+{{ partial "cta-specialists" .Params.ctaSpecialists }}
+
+{{ partial "features" .Params.features }}
+
+{{ partial "warranty-section" .Params.warrantySection }}
+
+{{ partial "footer-section" (dict "logoUrl" .Params.logo "footerSection" .Params.footerSection) }}
 
 {{ end }}

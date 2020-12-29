@@ -1,0 +1,154 @@
+<div id="toform"></div>
+
+<div style="background-color:#eee;">
+  <div class="row rown">
+    <div class="large-8 large-centered columns">
+      <form action="https://vr331.infusionsoft.com/app/form/process/5e87afcbfde557609ac29b3ac1c1320c"
+            class="infusion-form" id="inf_form_5e87afcbfde557609ac29b3ac1c1320c" method="POST"
+            name="Request price list"
+            onsubmit="var form = document.forms[0];
+          var resolution = document.createElement('input');
+          resolution.setAttribute('id', 'screenResolution');
+          resolution.setAttribute('type', 'hidden');
+          resolution.setAttribute('name', 'screenResolution');
+          var resolutionString = screen.width + 'x' + screen.height;
+          resolution.setAttribute('value', resolutionString);
+          form.appendChild(resolution);
+          var pluginString = '';
+          if (window.ActiveXObject) {
+          var activeXNames = {'AcroPDF.PDF':'Adobe Reader',
+            'ShockwaveFlash.ShockwaveFlash':'Flash',
+            'QuickTime.QuickTime':'Quick Time',
+            'SWCtl':'Shockwave',
+            'WMPLayer.OCX':'Windows Media Player',
+            'AgControl.AgControl':'Silverlight'};
+          var plugin = null;
+          for (var activeKey in activeXNames) {
+            try {
+              plugin = null;
+              plugin = new ActiveXObject(activeKey);
+            } catch (e) {
+              // do nothing, the plugin is not installed
+            }
+            pluginString += activeXNames[activeKey] + ',';
+          }
+          var realPlayerNames = ['rmockx.RealPlayer G2 Control',
+            'rmocx.RealPlayer G2 Control.1',
+            'RealPlayer.RealPlayer(tm) ActiveX Control (32-bit)',
+            'RealVideo.RealVideo(tm) ActiveX Control (32-bit)',
+            'RealPlayer'];
+          for (var index = 0; index &lt; realPlayerNames.length; index++) {
+            try {
+              plugin = new ActiveXObject(realPlayerNames[index]);
+            } catch (e) {
+              continue;
+            }
+            if (plugin) {
+              break;
+            }
+          }
+          if (plugin) {
+            pluginString += 'RealPlayer,';
+          }
+          } else {
+          for (var i = 0; i &lt; navigator.plugins.length; i++) {
+            pluginString += navigator.plugins[i].name + ',';
+          }
+          }
+          pluginString = pluginString.substring(0, pluginString.lastIndexOf(','));
+          var plugins = document.createElement('input');
+          plugins.setAttribute('id', 'pluginList');
+          plugins.setAttribute('type', 'hidden');
+          plugins.setAttribute('name', 'pluginList');
+          plugins.setAttribute('value', pluginString);
+          form.appendChild(plugins);
+          var java = navigator.javaEnabled();
+          var javaEnabled = document.createElement('input');
+          javaEnabled.setAttribute('id', 'javaEnabled');
+          javaEnabled.setAttribute('type', 'hidden');
+          javaEnabled.setAttribute('name', 'javaEnabled');
+          javaEnabled.setAttribute('value', java);
+          form.appendChild(javaEnabled);">
+        <input name="inf_form_xid" type="hidden" value="5e87afcbfde557609ac29b3ac1c1320c"/><input
+          name="inf_form_name" type="hidden" value="Request price list"/><input
+          name="infusionsoft_version" type="hidden" value="1.70.0.88618"/>
+        <div class="row expanded">
+          <div class="large-12 columns text-center">
+            <h3 class="margin--0">
+              <b>
+                {{ .title }}
+              </b>
+            </h3>
+          </div>
+        </div>
+        <div class="row expanded padding--20 ">
+
+          <div class="medium-6 columns">
+            <input type="text" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="Prénom *" required="">
+          </div>
+          <div class=" medium-6  columns">
+            <input type="text" id="inf_field_LastName" name="inf_field_LastName" placeholder="Nom *" required="">
+          </div>
+          <div class="medium-6  columns">
+            <input type="email" id="inf_field_Email" name="inf_field_Email" placeholder="E-mail *" required="">
+          </div>
+          <div class="medium-6  columns">
+            <input class="infusion-field-input" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Téléphone"
+                   type="text"/>
+          </div>
+          <div class="medium-6 columns">
+            <select id="inf_custom_Country21" name="inf_custom_Country21">
+              <option selected="selected" value="France" selected>France</option>
+              <option value="Germany">Germany</option>
+              <option value="Europe">Europe</option>
+            </select>
+          </div>
+          <div class="medium-6 columns">
+            <label for="inf_option_sendmesalesinfo">
+              <input id="inf_option_sendmesalesinfo" name="inf_option_sendmesalesinfo"
+                     style="margin-bottom:0px;" type="checkbox" value="1129"/> &nbsp;Je désire recevoir
+              des infos commerciales</label>
+          </div>
+          <div class="large-12 columns">
+            <textarea cols="24" id="inf_custom_Howdidyouhearaboutus0"
+                      name="inf_custom_Howdidyouhearaboutus0"
+                      placeholder="Comment avez-vous entendu parler de nous ?*" rows="5" required></textarea>
+          </div>
+          <div class="large-12 columns">
+            <input class="infusion-field-input" id="inf_custom_Messageoptional"
+                   name="inf_custom_Messageoptional" placeholder="Message (facultatif)" type="text"/>
+          </div>
+
+          <input id="_GaSource" name="inf_custom_GaSource" type="hidden" value=""/>
+
+          <input id="_GaContent" name="inf_custom_GaContent" type="hidden" value=""/>
+
+          <input id="_GaMedium" name="inf_custom_GaMedium" type="hidden" value=""/>
+
+          <input id="_GaTerm" name="inf_custom_GaTerm" type="hidden" value=""/>
+
+          <input id="_GaCampaign" name="inf_custom_GaCampaign" type="hidden" value=""/>
+
+          <input id="_GaReferurl" name="inf_custom_GaReferurl" type="hidden" value=""/>
+
+          <input id="_IPAddress" name="inf_custom_IPAddress" type="hidden" value=""/>
+
+          <input id="_GoogleClientID" name="inf_custom_GoogleClientID" type="hidden" value=""/>
+
+          <input id="_GoogleClickID" name="inf_custom_GoogleClickID" type="hidden" value=""/>
+
+        </div>
+        <div class="row">
+          <div class="small-12  medium-12 large-12 columns text-center">
+
+            <button class="orgbutton button infusion-recaptcha"
+                    id="recaptcha_5e87afcbfde557609ac29b3ac1c1320c" style="" type="submit" value="Submit">
+              <h6 class="margin--0"><b>{{ .btnText }}</b></h6>
+            </button>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

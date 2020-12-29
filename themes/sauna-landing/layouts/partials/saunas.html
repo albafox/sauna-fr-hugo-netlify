@@ -1,0 +1,38 @@
+{{ $list := (.saunaGroups) }}
+{{ $len := (len $list) }}
+
+{{ range $index, $element := $list }}
+
+  <div class="row">
+    <div class="small-12 medium-12 medium-centered large-12 large-centered columns">
+      <h3 class="black__font text-center margin--0">
+        <b>{{ .title }}</b>
+      </h3>
+    </div>
+  </div>
+
+  <div class="row rown">
+    <div class="saunas {{ if eq .itemsWrap false }}items-no-wrap{{ end }}">
+
+      {{ $btnText := .btnText }}
+      {{ range .sauna }}
+        <div class="sauna">
+          <div class="sauna-inner">
+            <img src="{{ .saunaImage }}" alt="{{ .saunaName }}" />
+            <h3>{{ .saunaName }}</h3>
+            <div class="button-wrap">
+              <a href="{{ .sauna_pdf }}" target="blank" class="orgbutton--outline button">{{ $btnText }}</a>
+            </div>
+          </div>
+        </div>
+        <hr class="show-for-small-only" style="width:100%;max-width: 100%;border: 0;height: 30px;margin: 0px;">
+      {{ end }}
+
+    </div>
+  </div>
+
+  {{ if ne (add $index 1) $len }}
+    <div class="hz__line" style="margin-bottom: 40px;"></div>
+  {{ end }}
+
+{{ end }}

@@ -1,0 +1,29 @@
+{{ with .footerSection }}
+{{ $list := (.footerLinks) }}
+{{ $len := (len $list) }}
+
+<div style="background: #eaeaea;">
+  <div class="row rown" data-equalizer>
+    <div class="small-12 medium-12 large-12 columns table" data-equalizer-watch>
+      <div class="table__cell--center">
+        <p style="margin-bottom: 0px">
+          <small>
+            {{ range $index, $element := $list }}
+              <span style="color: inherit;">{{ .linkTitle }}</span>
+              {{ if ne (add $index 1) $len }}
+                &nbsp; &nbsp;|&nbsp; &nbsp;
+              {{ end }}
+            {{ end }}
+          </small>
+        </p>
+        <p style="margin-bottom: 0px">
+          <small>
+            © {{ now.Year }} <span class="show-for-small-only"><br></span>{{ .copy }}
+          </small>
+        </p>
+        <img src="{{ .logoUrl }}" class="img__padding--10" style="padding-top: 20px;" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,16 @@
+<div style="background: #333333">
+  <div class="row rown">
+    <div class="small-12 medium-10 large-9 medium-centered columns">
+      <div class="row rowl">
+
+        {{ range . }}
+          <div class="medium-4 columns" style="text-align: center;">
+            <img src="{{ .icon }}" style="width: 100%;max-width: 50px;" class="padding--10">
+            <h5 class="white__font">{{ .title }}</h5>
+          </div>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+</div>

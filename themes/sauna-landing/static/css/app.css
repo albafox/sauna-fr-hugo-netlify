@@ -1,14 +1,12 @@
-html,body {
+html, body {
   font-family: 'Source Sans Pro', sans-serif;
   scroll-behavior: smooth;
 }
 
-
-body,h1,h2,h3,h4,h5,a,p {
+body, h1, h2, h3, h4, h5, a, p {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 500;
 }
-
 
 p {
   font-weight: 300;
@@ -23,8 +21,8 @@ a {
 
 input {
   border: 0px;
-  margin-bottom:10px !important;
-  margin-top:10px !important;
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
 }
 
 .hz__line {
@@ -34,7 +32,7 @@ input {
 
 /* default flex setting */
 
-.flex__row--center{
+.flex__row--center {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -42,7 +40,7 @@ input {
   align-items: center;
 }
 
-.flex__row--spacebetween{
+.flex__row--spacebetween {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -50,7 +48,7 @@ input {
   align-items: center;
 }
 
-.flex__column--center{
+.flex__column--center {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -58,7 +56,7 @@ input {
   align-items: center;
 }
 
-.flex__column--flexend{
+.flex__column--flexend {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -66,7 +64,7 @@ input {
   align-items: center;
 }
 
-.flex__column--spacebetween{
+.flex__column--spacebetween {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -76,7 +74,7 @@ input {
 
 /* default flex setting ended */
 
-.flex__row__wrap--spacebetween{
+.flex__row__wrap--spacebetween {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -204,7 +202,6 @@ input {
 }
 
 
-
 #video {
   display: block;
   width: 100%;
@@ -225,20 +222,18 @@ input {
 
 }
 
-.blue_mob
-{
+.blue_mob {
   position: absolute;
-    top: 0vw;
-    right: -6vw;
-    width: 23vw;
+  top: 0vw;
+  right: -6vw;
+  width: 23vw;
 
 }
 
-.blue_lin
-{
-   position: relative;
-  
-    
+.blue_lin {
+  position: relative;
+
+
 }
 
 .background__contain {
@@ -248,11 +243,9 @@ input {
 
 }
 
-.background__height__large--R{
+.background__height__large--R {
   height: 500px;
 }
-
-
 
 
 .orgbutton {
@@ -266,7 +259,7 @@ input {
 
 }
 
-.whitebutton{
+.whitebutton {
   padding: 10px 50px;
   background: white;
   color: #94b68f;
@@ -276,7 +269,7 @@ input {
   margin-bottom: 0px;
 }
 
-.whitebutton:hover{
+.whitebutton:hover {
   padding: 10px 50px;
   background: white;
   color: #94b68f;
@@ -288,7 +281,7 @@ input {
 
 .orgbutton--outline {
   padding: 10px 12px;
-  border:2px solid #FBB03B;
+  border: 2px solid #FBB03B;
   background: white;
   color: #FBB03B;
   font-size: 14px;
@@ -298,9 +291,9 @@ input {
 
 }
 
-.orgbutton--outline:hover ,.orgbutton--outline:focus{
+.orgbutton--outline:hover, .orgbutton--outline:focus {
   padding: 10px 12px;
-  border:2px solid #FBB03B;
+  border: 2px solid #FBB03B;
   background: #FBB03B;
   color: white;
   font-size: 14px;
@@ -357,14 +350,14 @@ textarea {
 }
 
 @media screen and (min-width: 90em) {
-  .blue_mob
-  {
+  .blue_mob {
     position: absolute;
-      top: 0vw;
-      right: -6vw;
-      width: 20vw;
-  
+    top: 0vw;
+    right: -6vw;
+    width: 20vw;
+
   }
+
   #status {
     left: 47%;
     /* centers the loading animation horizontally one the screen */
@@ -382,9 +375,10 @@ textarea {
 
 @media screen and (min-width: 40em) and (max-width: 75em) {
 
-  .background__height__large--R{
+  .background__height__large--R {
     height: 400px;
   }
+
   h2 {
     font-size: 2rem;
   }
@@ -455,17 +449,18 @@ textarea {
 }
 
 @media screen and (max-width: 40em) {
-  .blue_mob
-{
-  position: absolute;
+  .blue_mob {
+    position: absolute;
     top: 65%;
     right: 2vw;
     width: 30vw;
 
-}
-  .background__height__large--R{
+  }
+
+  .background__height__large--R {
     height: 200px;
   }
+
   .filter {
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: hue;
@@ -542,22 +537,53 @@ textarea {
     padding-bottom: 0px !important;
   }
 
-
   h1,
   h2,
   h3 {
     font-weight: bold;
   }
-
 }
 
 @media screen and (max-width: 30em) {
-  .blue_mob
-{
-  position: absolute;
+  .blue_mob {
+    position: absolute;
     top: 75%;
     right: 2vw;
     width: 30vw;
 
+  }
 }
+
+/* Saunas */
+.saunas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.saunas.items-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.sauna {
+  width: calc(100% / 3);
+  padding: 0 15px 30px;
+}
+
+.sauna-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sauna-inner img {
+  width: auto;
+  height: 300px;
+}
+
+.sauna-inner h3 {
+  padding: 0 0 18px;
+  font-size: 18px;
+  font-weight: bold;
 }

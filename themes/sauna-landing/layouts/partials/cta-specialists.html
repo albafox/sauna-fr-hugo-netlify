@@ -1,0 +1,41 @@
+<div style="background-color:#94b68f;">
+  <div class="row" style="position:relative;">
+    <div class="large-10 large-centered columns" data-equalizer>
+      <div class="hide-for-small-only small-12 medium-6 large-6 columns table" data-equalizer-watch>
+        <div class="table__cell--left rown">
+          <p class="white__font margin--0">{{ .smallTitle }}</p>
+          <h3 class="padding--10 margin--0">
+            <b class="white__font">
+              {{ .bigTitle }}
+            </b>
+          </h3>
+          <div class="row">
+            <div class="small-12  medium-12 large-12 columns text-left padding--10">
+              <a href="tel:{{ .btnPhone }}" class="whitebutton button ">{{ .btnText }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hide-for-small-only medium-6 large-6 columns table" data-equalizer-watch>
+        <div>
+          <img src="{{ .imageUrl }}" alt="{{ .smallTitle }}">
+        </div>
+      </div>
+      <div class="show-for-small-only small-12 columns table" data-equalizer-watch>
+        <div class="table__cell--center rown">
+          <p class="white__font margin--0">{{ .smallTitle }}</p>
+          <h3 class="padding--10 margin--0">
+            <b class="white__font">{{ .bigTitle }}</b>
+          </h3>
+          <div class="row">
+            <div class="small-12  medium-12 large-12 columns padding--10">
+              <button class="whitebutton button ">
+                {{ .btnText }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
