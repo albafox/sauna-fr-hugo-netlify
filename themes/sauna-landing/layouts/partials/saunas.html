@@ -1,6 +1,5 @@
-{{ $saunas := (.saunaGroups) }}
+{{ $saunas := .saunaGroups }}
 {{ $len := (len $saunas) }}
-
 {{ range $index, $element := $saunas }}
 
   <div class="row">
