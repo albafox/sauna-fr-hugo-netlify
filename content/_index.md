@@ -1,14 +1,14 @@
 ---
 logo: /uploads/logo-gold.png
 headerImage: /uploads/what.jpg
-aboutText: Les saunas infrarouges Clearlight® offrent une variété de choix pour
-  répondre aux besoins de tous. Nos trois gammes de saunas – Sanctuary, Premier
-  et Essential – sont disponibles en plusieurs tailles et peuvent accueillir
-  jusqu’à cinq personnes. De plus, tous nos saunas incluent une garantie
-  résidentielle à vie, une offre de financement accessible et sont faciles à
-  assembler. Notre nouveau développement est un sauna à spectre infrarouge
-  complet de plein air, disponible en deux tailles et pouvant accueillir entre 2
-  et 5 personnes
+aboutText: 11Les saunas infrarouges Clearlight® offrent une variété de choix
+  pour répondre aux besoins de tous. Nos trois gammes de saunas – Sanctuary,
+  Premier et Essential – sont disponibles en plusieurs tailles et peuvent
+  accueillir jusqu’à cinq personnes. De plus, tous nos saunas incluent une
+  garantie résidentielle à vie, une offre de financement accessible et sont
+  faciles à assembler. Notre nouveau développement est un sauna à spectre
+  infrarouge complet de plein air, disponible en deux tailles et pouvant
+  accueillir entre 2 et 5 personnes
 advantages:
   heading: Pourquoi choisir les saunas infrarouges Clearlight
   bgImage: /uploads/what.jpg
