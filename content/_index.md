@@ -1,7 +1,7 @@
 ---
 logo: /uploads/logo-gold.png
 headerImage: /uploads/banner1.jpg
-aboutText: Les saunas infrarouges Clearlight® offrent une variété de choix pour
+aboutText: 1Les saunas infrarouges Clearlight® offrent une variété de choix pour
   répondre aux besoins de tous. Nos trois gammes de saunas – Sanctuary, Premier
   et Essential – sont disponibles en plusieurs tailles et peuvent accueillir
   jusqu’à cinq personnes. De plus, tous nos saunas incluent une garantie
