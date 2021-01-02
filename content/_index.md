@@ -1,6 +1,6 @@
 ---
 logo: /uploads/logo-gold.png
-headerImage: /uploads/what.jpg
+headerImage: /uploads/banner1.jpg
 aboutText: 11Les saunas infrarouges Clearlight® offrent une variété de choix
   pour répondre aux besoins de tous. Nos trois gammes de saunas – Sanctuary,
   Premier et Essential – sont disponibles en plusieurs tailles et peuvent
