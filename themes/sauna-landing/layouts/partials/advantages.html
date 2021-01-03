@@ -1,25 +1,25 @@
-<div class="background__cover" style="background-image: url('{{.bgImage}}'); margin-bottom: 5vw;">
+<div class="background__cover" style="background-image: url('{{.Params.advantages.bgImage}}'); margin-bottom: 5vw;">
   <div class="row rown">
     <div class="small-12 medium-10 large-9 medium-centered center columns ">
       <h3 class="white__font " style="font-weight: bold;">
-        {{ .heading }}
+        {{ .Params.advantages.heading }}
       </h3>
       <p class="white__font rowm">
-        {{ .text }}
+        {{ .Params.advantages.text }}
       </p>
 
       <div class="row blue_lin  rowm" data-equalizer>
         <div class="medium-8 columns   out-vc" style="" data-equalizer-watch>
           <div class="in-vc">
             <h4 class="white__font padding--20" style="font-weight: bold;">
-              {{ .subHeading }}
+              {{ .Params.advantages.subHeading }}
             </h4>
 
             <div class="row padding--20 medium-up-2 small-up-1" style="padding-bottom: 0px;">
 
               <div style="column-count: 2;">
 
-                {{ range .advantages }}
+                {{ range .Params.advantages.advantages }}
                 <div class="row" style="break-inside: avoid;">
                   <div class="small-1 center columns" style="padding:0px;">
                     <img src="/uploads/what-bullet.png" style="width:100%;max-width:15px;">
@@ -38,7 +38,7 @@
 
         <div class="medium-4 columns   out-vc" data-equalizer-watch>
           <div class="in-vc">
-            <img src="{{.rightImage}}" class="blue_mob" style="">
+            <img src="{{.Params.advantagesgit .rightImage}}" class="blue_mob" style="">
           </div>
         </div>
       </div>
