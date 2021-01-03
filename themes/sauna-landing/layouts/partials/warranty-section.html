@@ -1,13 +1,13 @@
 <div class="row rown">
   <div class="small-12 medium-10 medium-centered large-10 large-centered columns">
-    <h2 class="text-center">{{ .title }}</h2>
+    <h2 class="text-center">{{ .Params.warrantySection.title }}</h2>
     <p class="text-center">
-      {{ .text }}
+      {{ .Params.warrantySection.text }}
     </p>
     <div class="row">
       <div class="small-12 medium-10 medium-centered large-10 large-centered columns">
 
-        {{ range .icons }}
+        {{ range .Params.warrantySection.icons }}
 
           <div class="small-6 large-3 columns text-center">
             <img src="{{ .iconUrl }}" style="width:100%;max-width:100px;" alt="">

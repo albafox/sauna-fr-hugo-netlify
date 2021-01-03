@@ -1,8 +1,8 @@
 {{ define "main" }}
 
-{{ partial "header-image" (dict "imageUrl" .Params.headerImage) }}
+{{ partial "header-image" . }}
 
-{{ partial "about-text" .Params.aboutText }}
+{{ partial "about-text" . }}
 
 {{ partial "advantages" . }}
 
@@ -12,15 +12,17 @@
 {{ partial "section-title" .Params.catalogueSection }}
 {{ partial "catalogue-section" . }}
 
-{{ partial "form-section" .Params.formSection }}
+{{ partial "form-section" . }}
 
 {{ partial "section-title" .Params.saunas }}
 {{ partial "saunas" . }}
 
 {{ partial "cta-specialists" . }}
 
-{{ partial "features" .Params.features }}
+{{ partial "features" . }}
 
-{{ partial "warranty-section" .Params.warrantySection }}
+{{ partial "warranty-section" . }}
+
+{{ partial "footer-section" . }}
 
 {{ end }}

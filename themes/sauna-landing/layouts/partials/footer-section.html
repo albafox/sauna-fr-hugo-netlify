@@ -1,4 +1,4 @@
-{{ with .footerSection }}
+{{ with .Params.footerSection }}
 {{ $list := (.footerLinks) }}
 {{ $len := (len $list) }}
 
@@ -18,10 +18,10 @@
         </p>
         <p style="margin-bottom: 0px">
           <small>
-            © {{ now.Year }} <span class="show-for-small-only"><br></span>{{ .copy }}
+            © {{ now.Year }} <span class="show-for-small-only"><br></span>{{ .Params.footerSection.copy }}
           </small>
         </p>
-        <img src="{{ .logoUrl }}" class="img__padding--10" style="padding-top: 20px;" alt="">
+        <img src="{{ .Params.logo }}" class="img__padding--10" style="padding-top: 20px;" alt="">
       </div>
     </div>
   </div>
