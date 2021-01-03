@@ -1,4 +1,4 @@
-{{ $saunas := .saunaGroups }}
+{{ $saunas := .Params.saunas.saunaGroups }}
 {{ $len := (len $saunas) }}
 {{ range $index, $element := $saunas }}
 
